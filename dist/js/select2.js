@@ -1894,7 +1894,7 @@ S2.define('select2/selection/search',[
     });
 
     this.$selection.on('keydown', '.select2-search--inline', function (evt) {
-      evt.stopPropagation();
+      // evt.stopPropagation();
 
       self.trigger('keypress', evt);
 
