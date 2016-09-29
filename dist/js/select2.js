@@ -1896,7 +1896,11 @@ S2.define('select2/selection/search',[
     this.$selection.on('keydown', '.select2-search--inline', function (evt) {
       var key = evt.which;
 
-      if (key != 9 && key != 13) {
+      if (key == 9) {
+        //
+      } else if (key == 13 && $('.select2-container--open').length < 1) {
+        //
+      } else {
           evt.stopPropagation();
       }
 
